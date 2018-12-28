@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:toolbar="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     toolbar:context=".MainActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -11,8 +11,33 @@
         android:layout_height="?android:attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
-        toolbar:logo="@mipmap/ic_launcher"
-        toolbar:title="大标题"
-        toolbar:subtitle="小标题" />
-</FrameLayout>
+        app:popupTheme="@style/OverflowMenuStyle"
+        toolbar:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="大标题"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World"/>
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

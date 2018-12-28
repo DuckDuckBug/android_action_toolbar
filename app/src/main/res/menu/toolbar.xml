@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@mipmap/search"
+        android:title="Search"
+        app:showAsAction="always"/>
+    <!--<item
+        android:id="@+id/search"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />-->
+    <item
+        android:id="@+id/info"
+        android:icon="@mipmap/ic_launcher"
+        android:title="通知"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@mipmap/ic_launcher"
+        android:title="设置"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/feedback"
+        android:icon="@mipmap/ic_launcher"
+        android:title="反馈"
+        app:showAsAction="never" />
 </menu>
