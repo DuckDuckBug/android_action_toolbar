@@ -6,7 +6,7 @@
 2. <item name="overlapAnchor">false</item>
 3. <item name="android:colorBackground">@color/colorPrimary</item>
 #### 3）	默认菜单项是不显示图标的，这里要求显示图标。 Done
-setOptionalIconsVisible true
+1. setOptionalIconsVisible true
 #### 4）	要求菜单项的背景颜色和Toolbar的背景颜色是一致的，toolbar上的文字颜色和菜单项的文字颜色是一致的。Done
 1. android:background="?attr/colorPrimary"
 2. android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -15,7 +15,7 @@ setOptionalIconsVisible true
 2. onCreateOptionsMenu getMenuInflater().inflate(R.menu.toolbar, menu)
 3. onOptionsItemSelected
 #### 6）	第二个页面中Toolbar左边有一个“上一页”的箭头。点击箭头，回到左边的主页。Done
-setDisplayHomeAsUpEnabled true
+1. setDisplayHomeAsUpEnabled true
 #### 7）	在介绍ActionBar时，我们介绍了ActionView。请在任一ToolBar上添加一个ActionBar按钮，并完成简单的相应。Done
 1. menu item app:actionViewClass="android.widget.Button" 
 2. 加载menu Button btn_test = (Button)menu.findItem(R.id.btn_test).getActionView();
